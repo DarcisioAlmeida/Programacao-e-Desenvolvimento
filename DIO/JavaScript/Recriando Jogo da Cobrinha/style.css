@@ -1,0 +1,23 @@
+body {
+    height: 95vh;
+    width: 95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #2e2e2e;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+canvas {
+    border: 1px solid black;
+}
+h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+}
