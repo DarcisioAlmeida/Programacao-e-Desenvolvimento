@@ -5,6 +5,7 @@
  <li><a href="https://b7web.com.br/">B7Web</a></li>
  <li><a href="https://www.youtube.com/channel/UCqHIWCQSq0yeE-1nbcRnt2w">CFB Cursos</a></li>
  <li><a href="https://www.cursoemvideo.com/">Curso em Video</a></li>
+ <li><a href="https://digitalinnovation.one/">Dio - Digital Innovation One </a></li>
  <li><a href="https://programador.onebitcode.com/">One Bit Code</a></li>
  <li><a href="https://www.origamid.com/">Origamid</a></li>
  <li><a href="https://www.rocketseat.com.br/discover"> Rocketseat</a></li>
