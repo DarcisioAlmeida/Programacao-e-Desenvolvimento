@@ -16,6 +16,7 @@
 <h3>Esta pasta contém:</h3>
  <p>- Aulas e Exercicios realizados; </p>
  <p>- Projetos e Desafios realizados; </p>
+ <p>- Materias e Tutoriais para estudos; </p>
  
 ### 🛠 Tecnologias
 
