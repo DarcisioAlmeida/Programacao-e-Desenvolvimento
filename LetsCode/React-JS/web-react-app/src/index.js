@@ -4,16 +4,21 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 // Renderizam no index.js
-  import App from './components/App'
-  import ClassesProps from './components/ClassesProps'
-  import ClassesStates from './components/ClassesStates';
+  // import App from './components/App'
+  // import ClassesProps from './components/ClassesProps'
+  // import ClassesStates from './components/ClassesStates';
+   // import RenderCondicional from './components/RenderCondicional';
+   import CiclosVida from './components/CiclosVida';
 
 
-ReactDOM.render(
+ReactDOM.render
+(
   <React.StrictMode>
     {/*App.js*/}
     {/*ClassesProps*/}
-    <ClassesStates />
+    {/*ClassesStates*/}
+    {/*RenderCondicional*/}
+    <CiclosVida/>
   </React.StrictMode>,
   document.getElementById('root')
 );
