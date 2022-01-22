@@ -5,9 +5,9 @@ import DescriptionWithLink from "../../Exercicios/Exercicio_2/DescriptionWithLin
 // Usando Props // Usando renderização condicional title // 
 const Planet = (props) =>{
   // Renderizando multiplos componentes uso map 
-    const namesSatellites = ["Estrelar", "Puller", "Atos", "Andromeda", "Fenix" ]
-    const satellites = namesSatellites.map((n) => 
-      <li>Satélite {n}</li>
+    const  namesSatellites= ["Estrelar", "Puller", "Atos", "Andromeda", "Fenix" ]
+    const satellites = namesSatellites.map((i) => 
+      <li>Satélite-{i}</li>
     )
 
   let title;

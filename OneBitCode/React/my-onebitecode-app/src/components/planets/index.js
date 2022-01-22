@@ -9,7 +9,7 @@ import Planet from "./planet"
       alert('Meu Evento')
     }
 
-  //evento como parametro - chamado em Planet
+  // evento como parametro - chamado em Planet
     const clickOnPlanet = () => {
       console.log('Clicou no meu planeta!')
     }
@@ -38,6 +38,7 @@ return (
       img_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROJvvc_gBXgwyxLW0z_Fl6X0FEgqvcK4IzSq3bShHDDVqGdgJyfbgFzw9W8ElFZy5RtY&usqp=CAU"
       text="Um texto do planeta Venus"
     />
+    
 
   </div>
 )
