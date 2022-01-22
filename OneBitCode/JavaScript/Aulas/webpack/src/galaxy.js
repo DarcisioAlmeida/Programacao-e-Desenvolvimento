@@ -1,1 +1,0 @@
-alert('Bem vindo à Via Lactea e a Constelação Solar')
