@@ -1,10 +1,11 @@
 
 import './style.css'
 
+// Usando Renderização condicional com Ternario
 const GrayImage = (props) => {
 return (
   <div>
-    <img class="gray-image" src={props.img_url} alt="" />
+    <img className= {props.gray ? "gray-image" : "color-image"} src={props.img_url} alt="" />
   </div>
 )
 }

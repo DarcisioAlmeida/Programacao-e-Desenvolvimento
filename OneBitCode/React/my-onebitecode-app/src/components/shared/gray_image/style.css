@@ -3,3 +3,6 @@
   filter: grayscale(100%); /* deixa imagem preto e branco*/
   
 }
+.color-image {
+  width: 500px;
+}

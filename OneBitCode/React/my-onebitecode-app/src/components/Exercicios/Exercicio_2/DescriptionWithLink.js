@@ -5,13 +5,23 @@
    - No componente Planet insira o componente criado como props e passe um pequeno texto descrevendo o Planeta e um link para o Wikipedia sobre ele.
 */
 
-const DescriptionWithLink = (props) => {
-  return (
-    <>
-       <p>{props.text}</p>
-       <a href={props.link}>{props.link}</a>
-    </>
+// Usando condicionais  IF e Else
+  const DescriptionWithLink = (props) => {
+    if(props.link) {
+      return (
+        <>
+          <p>{props.text}</p>
+          <a href={props.link}>{props.link}</a>
+        </>
+      )
+    } else {
+        return (
+        <>
+          <p><u>{props.text}</u></p>
+          <ul><li>teste</li></ul>
+        </>
+      )
+    }
     
-  )
-}
-export default DescriptionWithLink
+  }
+  export default DescriptionWithLink
