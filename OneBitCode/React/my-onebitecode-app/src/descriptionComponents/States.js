@@ -8,7 +8,10 @@
     - State - pertence a cada componente - são internos
 
   * Diferença de Component de classe vc component funcional 
-    * Component de Classe- 
+    - Classe uso de this e Construtor
+    - Funcional não usa this e construtor
+
+  * Component de Classe- usa this.
       - Declarar um estado em um component de classe
         construtor(props){
           super(props)
@@ -23,7 +26,7 @@
           })
         }  
     
-    * Component Funcional  
+  * Component Funcional - não usa this.
       - Declarar um estado de um component funcional  
         import React, {useState} from 'react'
         - const[count, setCount] = useState(0)
@@ -38,7 +41,7 @@
   import React from "react"
 
   /* Planets */
-
+// uso de this
 class Planets extends React.Component {
   constructor(props){
     super(props);

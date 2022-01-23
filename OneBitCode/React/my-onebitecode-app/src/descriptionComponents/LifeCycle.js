@@ -2,8 +2,8 @@
   * O que é Lifecycle - Ciclo de vida
     - cada component React tem um ciclo de vida
     - voce pode monitorar ou  manipular durante 3 fases:
-      1. Mounting - quando elemento é colocado no DOM
-      2. Updating - quando um componente é atualizado 
+      1. Mounting - quando elemento é colocado no DOM - componentDidMount
+      2. Updating - quando um componente é atualizado - 
                   - ocorre sempre que há uma mundança no estado ou na propriedade do componente
       3. Unmounting - quando um componente é removido do Dom
 
@@ -11,14 +11,14 @@
 /* Criando um Life Cycle - ciclo de vida - usando APi  */
   import Planet from "./planet"
   import React from "react"
-
+  
   /* Este exemplo esta simulando uma API originada da pasta Public/API usando o arquivo planets.json */
 async function getPlanets() {
   let response = await fetch('http://localhost:3000/api/planets.json') // acessando arquivo Api
   let data = await response.json()
   return data
 }
-
+// uso de this por ser componente de class
 class Planets extends React.Component {
   constructor(props){
     super(props);
