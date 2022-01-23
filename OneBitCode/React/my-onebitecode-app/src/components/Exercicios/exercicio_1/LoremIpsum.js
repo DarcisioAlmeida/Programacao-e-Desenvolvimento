@@ -12,7 +12,7 @@ import Hello from '../../Hello'
 const LoremIpsum = () => {
   return (
     <>
-    <Hello/>
+      <Hello/>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus laborum voluptas molestiae sed delectus maiores, esse unde ipsum, corporis quo dolorem vitae, ab sequi ea magni temporibus beatae voluptates fugiat.</p>
     </>
     

@@ -2,7 +2,7 @@ import React from 'react';
 import '../src/App.css'
 // import HelloWorld from './components/Hello';
 // import LoremIpsum from './components/Exercicios/exercicio_1/LoremIpsum';
-import Planets from './components/planets';
+import Planets from './components/planets/planets/index';
 import Planet from './components/planets/planet';
 
 

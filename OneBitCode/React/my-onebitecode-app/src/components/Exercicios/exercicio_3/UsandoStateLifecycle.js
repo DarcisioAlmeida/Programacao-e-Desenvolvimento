@@ -1,10 +1,10 @@
 /* 
   Usando State e Lifecycle 
     1. Transforme o component Planet em uma classe 
-    2. Depois no mesmo component crie uam state para armazenar os satelites do planeta
+    2. Depois no mesmo component crie um state para armazenar os satelites do planeta
     3. Crie um metodo para baixar os satelites da "API " URL = http://localhost:3000/api/{id_da_lua}
     4. Chame esse método quando o component for montado
-    5. Com resultado preencha o stae de luas do componet 
+    5. Com resultado preencha o state de luas do component 
     6. Exiba os satelites do planeta abaixo da imagem dele
   */
     import React from "react"
@@ -63,7 +63,6 @@ class Planet extends React.Component {
       </div>
     )
   }
-  
 }
 
 export default Planet

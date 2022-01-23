@@ -1,5 +1,7 @@
-import Planet from "./planet"
+import Planet from "../planet"
+import React, {useState, useEffect} from "react"
 // import GrayImage from "../shared/gray_image"
+import Form from "../form"
 
 /* Eventos */
   //leitura sobre eventos no React: https://reactjs.org/docs/handling-events.html
@@ -14,11 +16,21 @@ import Planet from "./planet"
       console.log('Clicou no meu planeta!')
     }
 
+    
 /* Planets */
 const Planets = () =>{
+  const [planets, setPlanets] = useState([])
+
+  const addPlanet = (new_planet) => {
+    setPlanets([...planets, new_planet])
+  }
+  
 return (
   <div>
     <h3>Planets List</h3>
+    <hr />
+    <Form addPlanet={addPlanet}/>
+    <hr />
     <button onClick={showMessage}>Show Message</button>
     
     <Planet 
@@ -38,6 +50,7 @@ return (
       img_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROJvvc_gBXgwyxLW0z_Fl6X0FEgqvcK4IzSq3bShHDDVqGdgJyfbgFzw9W8ElFZy5RtY&usqp=CAU"
       text="Um texto do planeta Venus"
     />
+    
     
 
   </div>

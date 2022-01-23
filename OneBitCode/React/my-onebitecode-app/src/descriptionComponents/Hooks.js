@@ -1,9 +1,9 @@
 /*
   * O que são Hooks 
-    - é uma forma de usarmos state e lifecycle e compartilharmos logica em componentes funcionais
+    - é uma forma de usarmos useState e lifecycle e compartilharmos logica em componentes funcionais
     - Eles foram inseridos a partir da versão 16.8 do React:
-    - useEffect é o Hook responsável pelo lifecycle
-    - useEffect substitui as declarações de componentDidMount
+    - useEffect é o Hook responsável pelo lifecycle(ciclo de vida)
+    - useEffect substitui as declarações de componentDidMount e componetDidUpdate
     // no exemplo: count é declaração de estado | setCount é quem altera estado
     // -------------------------------------------------------//
       * Exemplo de component com Hook de state *
@@ -82,7 +82,7 @@ const Planets= () => {
 
   /* funçao para duplicar(adicionar) um planeta*/ // para componente funcional dentro do component devemos usar const
   const duplicateLastPlanet = () => { 
-      let last_planet = planets[planets.length -1]
+    let last_planet = planets[planets.length -1]
       setPlanets([...planets, last_planet])
   }
 
