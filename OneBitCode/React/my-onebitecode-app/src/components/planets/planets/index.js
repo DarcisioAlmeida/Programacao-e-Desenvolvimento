@@ -1,7 +1,7 @@
 import Planet from "../planet"
 import React, {useState, useEffect} from "react"
 // import GrayImage from "../shared/gray_image"
-import Form from "../form"
+import Form from "../../../newPlanet/form"
 
 /* Eventos */
   //leitura sobre eventos no React: https://reactjs.org/docs/handling-events.html
