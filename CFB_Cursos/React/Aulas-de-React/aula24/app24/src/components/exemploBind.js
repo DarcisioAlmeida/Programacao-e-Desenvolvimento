@@ -1,5 +1,5 @@
 
-// Exemplo de como funciona o Bind //
+// Exemplo de como funciona o Bind // muda o contexto de quem recebe
 
 function carro(){
     let velmax = 200;

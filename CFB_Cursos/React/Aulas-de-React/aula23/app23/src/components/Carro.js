@@ -6,7 +6,7 @@ export default class Carro  extends React.Component{
         this.modelo ="HONDA CIVIC"
         this.state = {
             ligado:false,
-            veloATual : 50,
+            velAtual : 50,
         }
     }
 
@@ -34,17 +34,17 @@ export default class Carro  extends React.Component{
     acerelar (){
         this.setState(
             (state, props)=>(
-            {veloATual: state.veloATual + props.fator}
+            {velAtual: state.veloATual + props.fator}
             )
         )
     }
     render(){
         return(
             <div>
-                <h1>MEU Carro</h1>
+                <h1>Meu Carro</h1>
                 <p>Modelo : {this.modelo}</p>
                 <p>Ligado: {this.state.ligado ? "SIM" : "NÃO"}</p>
-                <p>Velocidade atual : {this.state.veloATual}</p>
+                <p>Velocidade Atual : {this.state.velAtual}</p>
                 <button onClick={this.ligarDesligar}>
                    {this.state.ligado ? "Desligar carro" : "Ligar carro"} 
                 </button>

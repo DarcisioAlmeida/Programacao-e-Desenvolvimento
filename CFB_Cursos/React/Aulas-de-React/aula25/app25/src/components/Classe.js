@@ -1,6 +1,5 @@
 import React from "react"
 
-
 class Classe extends React.Component{
     constructor(props){
         super(props)
@@ -8,9 +7,8 @@ class Classe extends React.Component{
     render(){
         return(
             <div>
-            <h1>Primeiro Componentes de classes</h1>
-
-            <p>Exemplo de frase:{this.props.site}</p>
+                <h1>Primeiro Componentes de classes</h1>
+                <p>Exemplo de frase:{this.props.site}</p>
             </div>
         
         )
