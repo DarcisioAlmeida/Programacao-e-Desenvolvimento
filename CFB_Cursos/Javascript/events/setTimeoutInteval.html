@@ -1,0 +1,68 @@
+<!--
+    SetTimeout e SetInterval
+
+    setTimeout - chama a função callback e executa chamada apenas uma vez
+    setInterval - chama funçao callback em chama em loop intervalo definido
+    clearInterval - cancela ou limpa a função callback do setInterval
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SetTimeout & SetInterval</title>
+        <style>
+            #dv1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+                background-color: #F00;
+            }
+        </style>
+        <script>
+            var tmp;
+
+            // funcao para alterar as cores // Math.floor - gera arredondamento // Math.random - gera aleatorio.
+                function mudaCor(){
+                    var obj=document.getElementById('dv1');
+                    var r=Math.floor(Math.random()*255);
+                    var g=Math.floor(Math.random()*255);
+                    var b=Math.floor(Math.random()*255);
+                    obj.style.backgroundColor="rgb("+r+","+g+","+b+")";
+                }
+
+            //var tmp = setTimeout(mudaCor, 3000); //setTimeOut - ocorre apena uma vez - 3000 milisegundos ou 3segundos
+
+            // funcao bt1
+                function iniciar(){
+                    tmp=setInterval(mudaCor, 3000);
+                }
+            // funcao bt2    
+                function parar(){
+                    clearInterval(tmp);
+                }
+            // inicia eventos bt1 e bt2     
+            function addEventos(){
+                document.getElementById('bt1').addEventListener('click', iniciar);
+                document.getElementById('bt2').addEventListener('click', parar);
+            }
+            //adiciona eventos ao carregar a página
+                window.addEventListener('load', addEventos)
+        </script>
+    </head>
+    <body>
+        <div id="dv1" >
+            <p>Qualquer coisa</p> 
+        </div>
+        <br>
+        <button id="bt1">
+            Iniciar
+        </button>
+        <button id="bt2">
+            Parar
+        </button>
+    </body>
+</html>

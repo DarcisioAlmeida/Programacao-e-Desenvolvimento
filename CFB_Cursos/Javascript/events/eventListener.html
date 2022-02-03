@@ -1,0 +1,52 @@
+<!--
+    addEventListener - melhor na organização de Eventos
+        Para este tipo de eventos as palavras on são retiradas, ex:
+            - onclick - somente click
+            - onmouseover - somente mouseover
+            - onload - somente load
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>addEventListener</title>
+        <style>
+            #dv1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+                background-color: #F00;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        </style>
+        <script>
+            function msg(){
+                alert('Darcisio Almeida - DEV')
+            }
+            function colorOne(){
+                var obj=document.getElementById('dv1');
+                obj.style.backgroundColor="#ff0";
+            }
+            function colorTwo(){
+                var obj=document.getElementById('dv1');
+                obj.style.backgroundColor="#f0f";
+            }
+
+            // Inicialização de Eventos 
+                function addEventos(){
+                    var obj=document.getElementById('dv1');
+                    obj.addEventListener('click', msg);
+                    obj.addEventListener('mouseover', colorOne);
+                    obj.addEventListener('mouseout', colorTwo);
+                }
+                window.addEventListener('load', addEventos); // melhorar forma de qdo carregar página e executar os eventos
+        </script>
+    </head>
+    <body>
+        <div id="dv1" ></div>
+    </body>
+</html>

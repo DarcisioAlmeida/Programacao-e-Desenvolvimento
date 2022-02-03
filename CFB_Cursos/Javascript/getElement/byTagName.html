@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementsByTagName</title>
+</head>
+<body>
+    <p>HTML5</p>
+    <p>CSS3</p>
+    <p>JavaScript</p>
+    <p>React</p>
+    <p>PHP</p>
+
+    <hr>
+
+    <script>
+       var tagsP=document.getElementsByTagName("p")[0];
+       document.write(tagsP[2].innerHTML);
+       tagsP[3].style.backgroundColor="red";
+    </script>
+</body>
+</html>

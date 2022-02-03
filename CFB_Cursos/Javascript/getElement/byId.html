@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Id</title>
+</head>
+<body>
+    <p id="texto">
+        Darcisio Almeida
+    </p>
+    <div id="caixa">
+
+    </div>
+    <input type="text" name="text" id="cxtexto" value="Stella e Lori">
+
+    <script>
+        document.getElementById("texto").style.color="#f00"; 
+        document.getElementById("texto").style.fontSize="75px";
+    </script>
+    <!--
+        Forma mais simples abaixo
+        Criando e usando uma variavel
+    -->
+    
+    <script>
+        //alterando o p
+            var txt=document.getElementById("texto");
+            txt.style.color="#0ff";
+            txt.style.fontSize="100px";
+        //alterando a div
+            var cx=document.getElementById('caixa');
+            cx.style.border="1px solid #000";
+            cx.style.width="300px";
+            cx.style.height="200px";
+            cx.style.backgroundColor="#aaa";
+            cx.innerText="Estou aqui";
+            cx.style.marginLeft="50px";
+        // usando innerHTML
+            document.getElementById("cxtexto").value="Denise";
+            document.getElementById("texto").innerHTML="Eu mudei"
+            alert(document.getElementById("caixa").innerHTML);
+
+    </script>
+</body>
+</html>
