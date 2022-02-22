@@ -1,0 +1,33 @@
+/*
+  CSS - # A Cascata (cascading)
+
+  A escolha do browser de qul regra aplicar, caso haja muitas regras para o mesmo elemento.
+  * seu estilo é lido de cima para baixo
+
+  E levado em consideração 3 fatores:
+
+  1. Origem do estilo
+  2. Especificidade
+  3. Importancia
+
+### Origem do estilo
+
+  1. inline > 2. tag style(interno) > 3. tag link(externo) 
+
+### Especificidade
+
+  E um calculo matematico, onde cada tipo de seletor e origem do estilo, possuem valores ea serem considerados
+
+  0. Universal selector, combinators, negation pseudo-class (:not())
+  1. Elemnt type selector e pseudo-elemnets (::before, ::after)
+  10. Classes e attribute selectors ([type="radio"])
+  100. ID slector
+  1000. inline
+
+### A regra !important
+
+  * cuidado evite usar
+  * não é considerado uma boa pratica
+  * quebra o fluxo natural da cascata
+
+*/

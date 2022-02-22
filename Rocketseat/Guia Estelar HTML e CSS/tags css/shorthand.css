@@ -1,0 +1,18 @@
+/*
+    ### Shorthand
+        * junção de propriedades
+        * resumidas
+        * mais legivel
+*/
+
+    /* background properties */
+
+    h1 { background-color: #000;
+        background-image: url(images/bg.gif);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    
+    /* background shorthand */
+
+    h1 { background: #000 url(images/bg.gif) no-repeat left top};

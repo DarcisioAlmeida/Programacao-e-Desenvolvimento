@@ -1,0 +1,22 @@
+/* 
+  # Selector 
+  Conecta um elememento HTML com CSS
+
+  # Tipos
+  * Global  ` * `
+  * Element/Types selector ` h1, h2, p, div `
+  * ID Selector ` #box, #container `
+  * Class Selector ` .red, .m-4 `
+  * Attribute selector, Pseudo-class, Pseudo-element, e outros
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 200px;
+}
+.m-40 {
+  margin: 40px;
+}

@@ -1,0 +1,91 @@
+<!--
+    <form>
+
+    - elemnto que definira um formulario
+    - é um container estilo <section> <footer>
+
+    Atributos basicos
+
+    - action - para onde esta formulario vai ser submetido
+    - method - define metodo 
+-->
+
+<!--Nunca crie um formulario dentro de outro form-->
+
+    <form action="https:google.com" method="GET"></form>  <!--"GET" (mostra dados no browser) -->
+    <form action="" method="POST"></form> <!-- "Post" (fica escondido dados)
+-->
+
+<!--
+    <fieldset>
+        - agrupamento de campos
+        - mesmo proprosito
+        - semantico
+        - acessibilidade
+
+    Atributos Especias
+
+        -diseble
+            - desabilita todos os elementos interno
+            - não serão enviados ao submeter o form
+        
+        -form
+            - o id de um formulario ao qual esse fildset pertence
+            - não precisa estar dentro do formulario
+
+        -name
+            - nome do grupo
+        
+        <legend>
+            - nome do agrupamento
+            - primeiro elementro dentro do fildset
+-->
+
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+    </fieldset>
+</form>
+
+<!--
+<button>
+    - Representa um botão
+    - Usado para enviar formulario
+    - É estilizado pelo user agent
+
+    Atributos comuns
+
+    - type
+        - submit
+        - reset
+        - button
+    - autofocus
+    - disabled
+    - name
+    - value
+    - form
+-->
+
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+
+<!--Duas formas de usar a tag Label-->
+<label >
+    <input type="text">
+</label>
+
+<label for="nome">Nome Completo</label>
+<input id="nome" type="text">
+
+
+<!--Dicas de Form
+
+    Desenhando 
+        - Pensar nos requisitos
+        - Ajuda a definir sas necessidades
+    
+    Dicas:
+        - Simples e focado
+        - somente dados necessarios
+        - Verifique o que te agrada
+-->

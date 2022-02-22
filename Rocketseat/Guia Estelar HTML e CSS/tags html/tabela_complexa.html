@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Complexa</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Produtos vendidos por Loja</caption>
+
+        <colgroup> <!--Tag que agraupa colunas..usado para SO-- -->
+            <col>
+            <col span="2" style="background-color: red;"> <!--span somente em colgroup-->
+            <col span="2" style="background-color: green;"> 
+        </colgroup> 
+
+        <thead>
+            <tr> <!--rowspan para linhas-->
+                <th rowspan="2"></th><!--vazio-->
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antonio Pereira</th>
+                <!--scope colgroup usado para identificar cabeçlho de agrupamento de colunas-->
+            </tr>
+
+            <tr> <!--colspan para colunas-->
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <!--scope col usado para identificar cabeçalho de colunas-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+                <!--scope col usado para identificar cabeçalho de linhas-->
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>40</td>
+                <td>20</td>
+                <td>30</td>
+                <td>25</td>
+                <!--scope col usado para identificar cabeçalho de linhas-->
+            </tr>
+        </tbody>
+
+        <!--METODO SCOPE É PARA MELHORAR ACESSIBILIDADE-->
+        <!--iMPORTANTE PARA MELHORAR SO DA PÁGINA-->
+
+    </table>
+</body>
+</html>
