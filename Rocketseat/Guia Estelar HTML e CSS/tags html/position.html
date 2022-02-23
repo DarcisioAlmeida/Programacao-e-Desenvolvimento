@@ -1,0 +1,74 @@
+<!--
+    # Page Layouts 
+  - Tables
+  - Floats e Clear
+  - Framewors e Grid System
+  - Flexbox
+  - Grid
+
+  # Posicionamentos
+  Controla onde, na página o elemento irá ficar. alterando o fluxo dos elementos
+  - Name: position
+  - Value: static | relative | absolute | fixed
+
+  # Relative
+  - top, right, bottom, left, z-index
+
+  # Absolute
+  - top, right, bottom, left, z-index
+-->
+<div class="box1 box"></div>
+<div class="box2 box"></div>
+<div class="box3 box"></div>
+
+<div class="box4 box"></div>
+<div class="box5 box"></div>
+<div class="box6 box"></div>
+
+<style>
+  .box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+  .box1 {
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 80px;
+  }
+
+  .box2 {
+    background-color: green;
+    position: absolute;
+    left: 10px;
+    top: 150px;
+  }
+
+  .box3 {
+    background-color: blue;
+    position: fixed;
+    bottom: 100px;
+  }
+
+  .box4 {
+    background-color: purple;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 3;
+  }
+  .box5 {
+    background-color: yellow;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+  }
+  .box6 {
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+</style>
