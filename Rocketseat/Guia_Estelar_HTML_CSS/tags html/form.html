@@ -1,0 +1,121 @@
+<!--
+    <form>
+
+    - elemento que definira um formulario
+    - é um container estilo <section> <footer>
+
+    Atributos basicos
+    - action - para onde esta formulario vai ser submetido
+    - method - define metodo 
+-->
+
+<!--Nunca crie um formulario dentro de outro form-->
+    <form action="https:google.com" method="GET"></form>  <!--"GET" (mostra dados no browser URL) usado em campo de pesquisa -->
+    <form action="" method="POST"></form> <!-- "Post" (fica escondido dados na URL)
+-->
+
+<!--
+    <fieldset> melhor interpretado pelos leitores de tela
+        - agrupamento de campos
+        - mesmo proprosito
+        - semantico
+        - acessibilidade
+
+        Atributos Especias
+            -diseble
+                - desabilita todos os elementos interno
+                - não serão enviados ao submeter o form
+            
+            -form
+                - o id de um formulario ao qual esse fildset pertence
+                - não precisa estar dentro do formulario
+
+            -name
+                - nome do grupo
+            
+            <legend> sempre acompanha o fildset
+                - nome do agrupamento
+                - primeiro elementro dentro do fildset
+-->
+
+<form action="">
+    <fieldset>
+        <legend>Contato</legend>
+    </fieldset>
+</form>
+
+<!--
+<button>
+    - Representa um botão
+    - Usado para enviar formulario
+    - É estilizado pelo user agent
+
+    Atributos comuns
+    - type
+        - submit
+        - reset
+        - button
+    - autofocus 
+    - disabled - regras de java script para impedir quando esta sendo preenchido
+    - name 
+    - value
+    - form - linka um formulário pela tag id
+-->
+
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+
+<!--
+    Label
+    - associar e identificar uma ou mais tag de entrada de dados
+    - Acessibilidade
+    - você pode clicar par amudar o foco de entrada de dados
+
+    Atributos:
+    - for
+        * para fazer a conexão entre este label e a tag de entrada de dados
+        * é feita via id do input
+        * so funciona com elementos especificos (button, input(not hidden), meter, output, progress, select, textarea) 
+-->
+<!--Duas formas de usar a tag Label-->
+    <label >
+        <input type="text">
+    </label>
+
+    <label for="nome">Nome Completo</label>
+    <input id="nome" type="text">
+
+<!--
+    # <datalist>
+        - lista de valores como sugestão a uma tag <input>
+        - Valores sugestivos e não obrigatorios
+        - Usuario poderão selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+    # list
+        - recebe como valor o iod um <datalist> residente no mesmo documento.
+-->
+    <input 
+        type="text"
+        list="fruitsdata"
+        placeholder="Escolha uma fruta"
+    >
+
+    <datalist id="fruitsdata">
+        <option value="">apple</option>
+        <option value="">banana</option>
+        <option value="">mango</option>
+        <option value="">orange</option>
+        <option value="">cherry</option>
+    </datalist>
+
+<!--Dicas de Form
+
+    Desenhando 
+        - Pensar nos requisitos
+        - Ajuda a definir sas necessidades
+    
+    Dicas:
+        - Simples e focado
+        - somente dados necessarios
+        - Verifique o que te agrada
+-->

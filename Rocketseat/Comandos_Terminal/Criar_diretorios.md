@@ -1,0 +1,13 @@
+Criando diretórios com mkdir
+
+Descrição
+Nesta aula será utilizado o comando mkdir (make directory, ou fazer diretório, do inglês).
+
+Caso queira criar um diretório, use o com a seguinte sintaxe
+
+mkdir Pasta1
+Podemos também criar múltiplas pastas com uma só execução do comando, da seguinte forma:
+mkdir Pasta1 Pasta2 Pasta3
+Ou ainda adicionar pastas dentro dessas pastas da seguinte forma ao usar o argumento -p, que nos possibilita
+
+mkdir -p Pasta1/DentroDaPasta1/MaisUmaPasta/Pastaception

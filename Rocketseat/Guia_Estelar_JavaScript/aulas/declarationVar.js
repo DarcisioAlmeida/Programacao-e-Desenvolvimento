@@ -26,7 +26,7 @@ let isHuman = true
 // concatenando valores // escrita + variável
     console.log('O ' + nome + ' tem ' + age + ' anos, isso é verdade? ' + isHuman)
 
-// interpolando valores com tamplete literal or template strings
+// interpolando valores com template literal or template strings
     console.log(`o ${nome} tem ${age} anos. `) // uso de crase
 
 

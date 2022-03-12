@@ -1,15 +1,19 @@
 <!--
-    <input>> Atributos comuns
-
-    - autocomplete
-    - autofocus
-    - disabled
-    - readonly (quase todos)
-    - value
-    - form (quase todos)
-    - name
-    - required (quase todos)
-    - placeholder (password, search, tel, text, url) quase todos
+    <input> 
+        - um dos mais usados em formularios
+        - aceita os mais diversos tipos de dados e numeros de combinações
+        - um dos mais poderosos e complexos
+    
+        Atributos comuns
+        - autocomplete
+        - autofocus
+        - disabled
+        - readonly (quase todos)
+        - value
+        - form (quase todos)
+        - name
+        - required (quase todos)
+        - placeholder (password, search, tel, text, url) quase todos
 -->
 
 <input type="email" autocomplete="email"> <!--ver documentação do autocomplete-->
@@ -25,21 +29,19 @@
 
 <!--
     <input type="password"
-
     - colocar uma senha segura
     - esconde o que esta sendo digitado no campo
-    - o estilo de apresentação do campo depenmde do user agent (browser) 
+    - o estilo de apresentação do campo depende do user agent (browser) 
 
-    #Atributos
-
+    # Atributos
     - minlength / maxlength
         * define numero minimo e maximo para o campo
 
     - size 
-        * define o numero aceitavel para este campo
+        * define o numero aceitavel para este campo - tamanho
     
     - pattern
-        * Expressao que valida o que esta sendo digitado
+        * Expressao regular que valida o que esta sendo digitado
         * Altamente recomendado o uso de um padrão de segurança de senhas
         * exemplo: queremos que a senha contenha caracateres hexadecimais com o limite de no minimo 4 e maximo 8
             pattern="[0-9a-fa-F]{4,8}"
@@ -53,17 +55,23 @@
         * on: permite sugestão de: new-password ou current-password
         * of: desabilita a opção de autocompletar
         * new-password: o navegador poderá sugerir uma nova senha
-
-
 -->
 
-<input type="password" name="password" id="password" minlength="4" maxlength="8" size="8" pattern="[0-9a-fa-F]{4,8}" title="coloque no min 4 caracteres e no maximo 8">
+<input 
+    type="password" 
+    name="password" 
+    id="password" 
+    minlength="4" 
+    maxlength="8" 
+    size="8" 
+    pattern="[0-9a-fa-F]{4,8}" 
+    title="coloque no min 4 caracteres e no maximo 8"
+>
 
 <input type="password" name="" id="" autocomplete="new-password">
 
-
 <form action="" method="POST" enctype="multipart/form-data"> <!--envio de arquivos--> <!--somente tipo file use esta estrutura-->
-    <input type="file" name="" id="">
+    <input type="file" accept=".doc" multiple > <!-- accept descreve tipo de arquivo a ser aceito-->
 </form>
 
 <!--Optgroup-->
@@ -113,8 +121,7 @@
     - Controle para selecionar um valor numerico
     - Slider ou dial control
 
-    #Atributos
-
+    # Atributos
     - min / max
     - step - pula conforme deteminado (2 em 2), (100 em 100)
 -->
