@@ -117,7 +117,6 @@
   z-index: 2;
   font-size: 20px;
   font-weight: bold;
-
 }
 
 .dialogNewsletter-fechar:hover:before,
@@ -126,6 +125,7 @@
   cursor: pointer;
 }
 
+/* RESPONSIVE */
 @media (min-width: 830px) {
 
   .dialogNewsletter-body {
@@ -145,5 +145,4 @@
     flex-basis: 20%;
     height: 3.1em;
   }
-
 }

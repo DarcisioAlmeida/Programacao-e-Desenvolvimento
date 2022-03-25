@@ -13,7 +13,6 @@
   box-shadow: 0 2px 9px #ddd;
   max-width: 300px;
   display: inline-block;
-
 }
 
 .secaoPlanos-plano--start {
@@ -103,11 +102,10 @@
   background-color: #B72E2E;
 }
 
-
+/* RESPONSIVE */
 @media (min-width: 830px) {
 
   .secaoPlanos-plano {
     max-width: 260px;
   }
-
 }

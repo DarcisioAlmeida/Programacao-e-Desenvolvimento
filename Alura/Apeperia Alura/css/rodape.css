@@ -50,6 +50,7 @@
   text-decoration: underline;
 }
 
+/* RESPONSIVE */
 @media (min-width: 830px) {
 
   .rodape-logo {

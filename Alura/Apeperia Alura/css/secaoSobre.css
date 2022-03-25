@@ -17,7 +17,7 @@
   display: none;
 }
 
-
+/* RESPONSIVE */
 @media (min-width: 830px) {
 
   .secaoSobre {
@@ -55,5 +55,4 @@
     margin-right: 3em;
     margin: 1em 3em 0 0
   }
-
 }

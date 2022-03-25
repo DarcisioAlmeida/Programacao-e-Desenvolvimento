@@ -21,6 +21,7 @@
   margin-top: 30px;
 }
 
+/* RESPONSIVE */
 @media (min-width: 830px) {
 
   .secaoInstitucional-coluna {
@@ -33,5 +34,4 @@
     width: 40%;
     margin-top: 0;
   }
-  
 }

@@ -25,7 +25,6 @@
   filter: brightness(1.2);
 }
 
-
 .cabecalho-nav {
   text-align: center;
 }
@@ -41,7 +40,6 @@
   text-decoration: none;
   color: #fff;
   font-family: 'Open Sans', serif;
-
 }
 
 .cabecalho-nav-item a:hover,

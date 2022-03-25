@@ -44,6 +44,7 @@
   color: #333;
 }
 
+/* RESPONSIVE */
 @media (min-width: 830px) {
 
   .secaoDestaque {
@@ -53,5 +54,4 @@
   .secaoDestaque-titulo {
     font-size: 5vw
   }
-
 }
