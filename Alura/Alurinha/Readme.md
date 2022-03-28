@@ -14,3 +14,5 @@ Elabore um site responsivo com flexbox
   Grid principal e limitações do flexbox
   Arrumando os elementos com flex para mobile
   Mais sobre flexbox & desafios
+
+Nota: Para facilitar o entendimento o Arquivo flexbox.css contém apenas a distribuição dos itens adequados ao flexbox, outras configurações de posicionamento estão em style.css
