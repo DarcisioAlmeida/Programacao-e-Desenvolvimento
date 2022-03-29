@@ -34,5 +34,7 @@
   .cabecalhoPrincipal-nav-link-app {
     order: -1;
   }
-
+  .videoSobre .container {
+    flex-direction: column;
+  }
 }

@@ -22,7 +22,24 @@
   margin-left: 0;
 }
 
-
+/* Main Principal - Video Sobre */
+.videoSobre .container {
+  display: flex;
+}
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  
+}
+.videoSobre-list {
+  flex-grow: 1;
+}
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+}
 /* Footer */
 .rodapePrincipal-navMap-list {
   display: flex;
