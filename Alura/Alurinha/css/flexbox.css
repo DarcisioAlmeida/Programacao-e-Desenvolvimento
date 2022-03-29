@@ -7,6 +7,21 @@
 .cabecalhoPrincipal-nav {
   display: flex;
 }
+/* Main Principal */
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.conteudoPrincipal-cursos-link {
+  width: 23%;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  margin-right: 0;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  margin-left: 0;
+}
+
 
 /* Footer */
 .rodapePrincipal-navMap-list {
