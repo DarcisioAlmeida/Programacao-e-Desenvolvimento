@@ -165,7 +165,8 @@ body {
     margin: 0 0 2em;
   }
   form {
-    margin: 40px 0;
+   
+    margin: 20px auto;
   } 
   form label, form legend {
     display: block;
@@ -177,6 +178,7 @@ body {
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+    
   }
   .checkbox {
     margin: 20px 0;
