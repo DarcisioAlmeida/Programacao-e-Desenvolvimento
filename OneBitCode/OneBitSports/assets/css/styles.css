@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.logoNavBar {
+  width: 180px;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 8px 15px;
+}
+.headerBtnGroup {
+  display: flex;
+  gap: 15px;
+}
+.navBtn {
+  font-size: 16px;
+  padding: 6px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.navBtn:hover {
+  border-bottom: 2px solid #000;
+}
+.sectionTitle {
+  font-size: 26px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+.sectionDescription {
+  text-align: center;
+  color: #383838;
+}
