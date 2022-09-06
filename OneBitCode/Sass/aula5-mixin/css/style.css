@@ -1,0 +1,37 @@
+/*
+// sem mixin
+.texts {
+  h1 {
+    color: #ff4043;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  p {
+    color: #ff00ff;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+*/
+.texts h1 {
+  color: #ff4043;
+  font-size: 34px;
+  font-family: Courier New;
+  text-align: center;
+}
+.texts p {
+  color: #f0f;
+  font-size: 22px;
+  font-family: Franklin;
+  margin-left: 30px;
+}
+.texts button {
+  color: #00ff00;
+  font-size: 25px;
+  font-family: Arial;
+  background-color: #ff3333;
+  padding: 20px;
+  margin: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

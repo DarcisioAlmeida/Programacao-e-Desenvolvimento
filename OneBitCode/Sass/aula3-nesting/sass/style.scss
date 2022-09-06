@@ -1,0 +1,33 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+//manter terminal aberto para compilar as alterações no sass
+
+// Nesting é uma forma de otimizar a declaração de Css dentrao da mesma tag.
+
+$color:red;
+
+.classe1 {
+  ul{
+    background-color: $color;
+  }
+  li{
+    background-color: blue;
+  }
+}
+.classe2 {
+  li{
+    background-color: $color;
+  }
+  button {
+    background-color: green;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: purple;
+      color: #000;
+    }
+  }
+}

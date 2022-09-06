@@ -1,0 +1,46 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+//manter terminal aberto para compilar as alterações no sass
+
+
+// Mixin - Voce micxa(junta) varios informações e um unico bloco
+@mixin text-style ($color, $font-size, $font-family) { 
+color: $color;
+font-size: $font-size;
+font-family: $font-family;
+}
+$secondary-color: #f0f;
+/*
+// sem mixin
+.texts {
+  h1 {
+    color: #ff4043;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  p {
+    color: #ff00ff;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+*/
+
+// com mixin
+.texts {
+  h1 {
+    @include text-style(#ff4043, 34px, Courier New);
+    text-align: center;
+  }
+  p {
+    @include text-style($secondary-color, 22px, Franklin );
+    margin-left: 30px;
+    
+  }
+  button {
+    @include text-style(#00ff00, 25px, Arial );
+    background-color: #ff3333;
+    padding: 20px;
+    margin: 25px;
+  }
+}

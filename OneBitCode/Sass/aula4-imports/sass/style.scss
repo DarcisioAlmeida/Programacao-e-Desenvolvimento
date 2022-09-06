@@ -1,0 +1,11 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+//manter terminal aberto para compilar as alterações no sass
+// imports sempre ficam nesta página
+// atenção a hierarquia de pastas
+
+// Import Colors
+@import "./colors/colors.scss";
+
+// Imports Home
+@import "./pages/home.scss"

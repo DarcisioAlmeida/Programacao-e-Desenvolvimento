@@ -1,0 +1,19 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+//manter terminal aberto para compilar as alterações no sass
+// variaveis usa sinal de $
+
+$btn-color:#ff4043;
+$width-btn: 195px; // 75px; 100px
+$padding-btn:20px;
+
+.btn1 {
+  width: $width-btn;
+  background-color: $btn-color;
+  padding: 30px ;
+}
+.btn2 {
+  width: 170px;
+  background-color: $btn-color;
+  padding: $padding-btn;
+}
