@@ -1,0 +1,20 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+//manter terminal aberto para compilar as alterações no sass
+
+/* (comando para transformar em minify e deixar site mais rápido) // transforma todo CSS em linha unica
+  sass sass/style.scss:css/style.css --style compressed
+*/
+
+
+// Colors
+@import './variables/colors/colors.scss';
+
+//Common
+@import './variables/common/commons.scss';
+
+// Cadastro
+@import './pages/cadastro.scss';
+
+// Login
+@import './pages/login.scss';

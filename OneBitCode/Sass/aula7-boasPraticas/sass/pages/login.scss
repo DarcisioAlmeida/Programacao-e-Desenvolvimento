@@ -1,0 +1,10 @@
+// uso do mixin
+.container {
+  p {
+    @include text-style(#303030, 22px, Arial)
+  }
+  h2 {
+    @include text-style(#00ff00, 34px, Verdana);
+    background-color: #000;
+  }
+}

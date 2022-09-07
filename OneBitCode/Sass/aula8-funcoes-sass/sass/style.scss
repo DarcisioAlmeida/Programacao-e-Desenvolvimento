@@ -1,0 +1,30 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+// manter terminal aberto para compilar as alterações no sass
+
+// w3 schools tem funções do Sass pre prontas como mix
+// raramente você cria funções em Sass - usa funções ja padronizadas.
+ 
+#title {
+  color: mix(#ffff00, #00f, 50% )
+}
+
+// criando uma function sass
+@function color-description($background-color) {
+  @if(lightness($background-color) > 50) {
+    @return #00f;
+  } @else {
+    @return #ff0
+  }
+}
+
+@mixin background-color-mixin($color) {
+  background-color: $color;
+  color: color-description($color);
+}
+
+.description {
+  @include background-color-mixin(#000);
+  height: 50vh;
+  width: 400px;
+}

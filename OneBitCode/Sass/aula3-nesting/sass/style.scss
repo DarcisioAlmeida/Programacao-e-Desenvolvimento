@@ -30,4 +30,9 @@ $color:red;
       color: #000;
     }
   }
+  @media (max-width:576px) {
+    button {
+      background-color: red;
+    }
+  }
 }

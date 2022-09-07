@@ -1,0 +1,34 @@
+// sempre verificar qual pasta vc esta no terminal
+// comando para transformar scss em css no terminal => sass --watch sass/style.scss:css/style.css
+//manter terminal aberto para compilar as alterações no sass
+
+.btn {
+  width: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #000;
+
+  // somente funciona juntamente com classe .btn
+  &.btn-vermelho {
+    background-color: #ff0000;
+    color: #fff;
+  }
+    
+  &.btn-verde {
+    background-color: #008000;
+    color: #fff;
+    height: 100px;
+  }
+}
+
+// usando extends - não tem a classe .btn mas herda os estilos com uso @extend 
+.btn-amarelo {
+  @extend .btn;
+  //background-color: #ffff00;
+  color: #0000ff;
+  padding: 50px;
+  width: 200px;
+}

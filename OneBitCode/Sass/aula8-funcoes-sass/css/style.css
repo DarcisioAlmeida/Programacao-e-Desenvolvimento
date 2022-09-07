@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* (comando para transformar em minify e deixar site mais rápido) 
+  sass sass/style.scss:css/style.css --style compress
+*/
+#title {
+  color: gray;
+}
+
+.description {
+  background-color: #000;
+  color: #ff0;
+  height: 50vh;
+  width: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

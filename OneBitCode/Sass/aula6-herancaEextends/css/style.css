@@ -1,0 +1,26 @@
+.btn, .btn-amarelo {
+  width: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #000;
+}
+.btn.btn-vermelho, .btn-vermelho.btn-amarelo {
+  background-color: #ff0000;
+  color: #fff;
+}
+.btn.btn-verde, .btn-verde.btn-amarelo {
+  background-color: #008000;
+  color: #fff;
+  height: 100px;
+}
+
+.btn-amarelo {
+  color: #0000ff;
+  padding: 50px;
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */

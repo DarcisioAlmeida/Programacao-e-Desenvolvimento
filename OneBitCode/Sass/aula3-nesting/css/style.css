@@ -19,5 +19,10 @@
   background-color: purple;
   color: #000;
 }
+@media (max-width: 576px) {
+  .classe2 button {
+    background-color: red;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
