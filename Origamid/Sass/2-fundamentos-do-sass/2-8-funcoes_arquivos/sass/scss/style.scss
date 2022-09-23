@@ -1,3 +1,6 @@
+// mais importantes - funções de cor e matematicas
+// documentação do Sass ou w3Schools
+
 @function grid($colunas, $total: 12) {
 	@return round(($colunas / $total) * 100%);
 }

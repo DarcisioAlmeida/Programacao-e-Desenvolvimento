@@ -1,3 +1,7 @@
+// extend - não muito utilizado e pode dar problemas
+// se for usar - sempre use quando parecer o sletor apenas uma vez no site
+// melhor usar mixin
+
 %clearfix::after {
 	content: '';
 	display: table;
@@ -61,7 +65,7 @@ section {
 .modal {
 	@include box-shadow(10px 10px 0 0 rgba(0,0,0,.5),
 											15px 15px 0 0 rgba(0,0,0,.5),
-											20px 20px 0 0 rgba(0,0,0,.5))
+											20px 20px 0 0 rgba(0,0,0,.5));
 	h1 {
 		color: $cor-primaria;
 		font-family: $font-primaria;

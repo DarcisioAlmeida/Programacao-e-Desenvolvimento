@@ -1,3 +1,8 @@
+/*
+	m = mobile
+	t = tablet
+	s = screen
+*/
 @mixin d($device) {
 	@if $device == m {
 		@media (max-width: 300px) {
@@ -26,6 +31,7 @@ div {
 	}
 }
 
+// pode usar qualquer operador > < !
 div {
 	$width: 400px;
 	width: $width;
@@ -86,7 +92,7 @@ section {
 .modal {
 	@include box-shadow(10px 10px 0 0 rgba(0,0,0,.5),
 											15px 15px 0 0 rgba(0,0,0,.5),
-											20px 20px 0 0 rgba(0,0,0,.5))
+											20px 20px 0 0 rgba(0,0,0,.5));
 	h1 {
 		color: $cor-primaria;
 		font-family: $font-primaria;

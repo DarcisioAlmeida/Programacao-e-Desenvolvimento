@@ -11,6 +11,7 @@
 	-webkit-box-sizing: border-box;
 }
 
+// com argumentos e valor default
 @mixin separador($color: pink, $largura: 100px) {
 	&::after {
 		content: '';
@@ -21,12 +22,14 @@
 	}
 }
 
+// argumentos ... ( mais de um valor)
 @mixin box-shadow($shadow...) {
 	box-shadow: $shadow;
 	-moz-box-shadow: $shadow;
 	-webkit-box-shadow: $shadow;
 }
 
+// content - responsivo via Sass
 @mixin mobile {
 	@media (max-width: 600px) {
 		@content;
@@ -47,13 +50,14 @@ section {
 .modal {
 	@include box-shadow(10px 10px 0 0 rgba(0,0,0,.5),
 											15px 15px 0 0 rgba(0,0,0,.5),
-											20px 20px 0 0 rgba(0,0,0,.5))
+											20px 20px 0 0 rgba(0,0,0,.5));
 	h1 {
 		color: $cor-primaria;
 		font-family: $font-primaria;
 		margin-bottom: $gutter;
 		@include title-large;
 		@include separador(yellow, 400px);
+		// content
 		@include mobile {
 			color: #84E;
 			font-size: 2em;
@@ -67,6 +71,7 @@ section {
 		}
 		line-height: 1.4;
 		max-width: 400px;
+		// content
 		@include mobile {
 			font-size: .6em;
 		}
